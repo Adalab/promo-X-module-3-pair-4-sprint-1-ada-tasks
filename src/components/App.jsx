@@ -1,4 +1,6 @@
 import '../scss/App.scss'
+import Header from './Header.jsx'
+import Form from './Forms.jsx'
 import listOlSolid from '../images/list-ol-solid.svg'
 import lightBulb from '../images/lightbulb-regular.svg'
 import objectRegular from '../images/object-ungroup-regular.svg'
@@ -9,16 +11,10 @@ import repeatSolid from '../images/repeat-solid.svg'
 function App() {
   return (
     <div>
-      <header className="header">
-        <h1 className="title">AdaTasks</h1>
-    </header>
+      <Header/>
     <main className="main">
-        <section className="container add ">
-            <form className="task-form-add">
-                <input type="text" className="task-input js-text-task-add" placeholder="Nueva tarea"/>
-                <button className="add-task-btn js-btn-add">Agregar</button>
-            </form>
-        </section>
+        <Form/>
+       
 
         <section className="container">
             <form className="task-form">
